@@ -62,7 +62,7 @@ header{
     text-transform: uppercase;
     cursor: pointer;
     color: #010208;
-    font-size: min(max(16px, 2vw), 14px);
+    font-size: min(max(24px, 3vw), 14px);
     padding: 20px;  
 }
 .header-links a:hover{
@@ -186,6 +186,8 @@ main{
     -webkit-background-clip: text;
     color: transparent;
     width: 100%;
+    background-color: #f1f1f1;
+    
 }
 .sub-txt-main{
     width: 100%;
@@ -323,10 +325,13 @@ main{
     padding: 3px;
     font-family: 'Poppins';
     font-size: min(max(14px, 3vw), 13px);
-    font-weight: 300;
-    letter-spacing: 0.5px;
+    font-weight: 200;
+    color: #ffffff;
+    letter-spacing: 0.8px;
+    line-height: 1.3rem;
     margin-bottom: 10px;
-    height: 65px;
+    border: 1px solid;
+    height: 90px;
     width: 100%;
 }
 .sub-valor{
@@ -672,6 +677,7 @@ footer{
     justify-content: center;
     width: 100%;
     height: auto;
+    background-color: #fff;
     color: #010208;
 }
 .footer-info{
@@ -683,6 +689,7 @@ footer{
     justify-content: space-between;
     gap: 10px;
     padding: 10px 30px;
+    background-color: #fff;
 }
 .footer-logo{
     display: flex;
@@ -693,6 +700,7 @@ footer{
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.5;
+    background-color: #fff;
 }
 .logo-footer{
     width: 12em;
@@ -969,7 +977,7 @@ footer{
         padding: 5px;
     }
     .txt-historia-burgueria{
-        padding: 5px;
+        padding: 10px;
     }
     /* Footer *********************/
     .footer-reserva{
