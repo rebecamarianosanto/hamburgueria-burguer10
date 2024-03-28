@@ -184,7 +184,7 @@ main{
     , #f1f1f1, #343a40);
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
+    color: #6666;
     width: 100%;
     background-color: #f1f1f1;
     
