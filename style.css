@@ -136,8 +136,8 @@ main{
 }
 /*ft-principal*/
 .ft-main2{
-    width: 87%;
-    height: 70vh;
+    width: 90%;
+    height: 80vh;
     background-image: url(imagens/img-fundo/1-combo-fundo-main.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -330,7 +330,6 @@ main{
     letter-spacing: 0.8px;
     line-height: 1.3rem;
     margin-bottom: 10px;
-    border: 1px solid;
     height: 90px;
     width: 100%;
 }
@@ -783,7 +782,7 @@ footer{
 @media (max-width: 1149px){
     /* Main ******************/
     .ft-main2{
-        width: 100%;
+        width: 80%;
         height: 55vh;
     }
     /* Cardápio ***************/
@@ -846,7 +845,10 @@ footer{
     }
     /* main ******************************/
     .ft-main2{
-        width: 80%;
+        width: 50%;
+        height: 70vh;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     .center-main{
     flex-direction: column;
@@ -927,7 +929,8 @@ footer{
 @media screen and (max-width: 768px){
     /*Main *****************************/
     .ft-main2{
-        height: 50vh;
+        width: 70%;
+        height: 60vh;
         margin-bottom: 0;
     }
     .main-container{
@@ -965,8 +968,8 @@ footer{
 @media (max-width: 500px){
     /* Main *****************/
     .ft-main2{
-        width: 90%;
-        height: 40vh;
+        width: 60%;
+        height: 50vh;
     }
     .main-container{
         width: 100%;
@@ -987,8 +990,8 @@ footer{
 @media (max-width: 440px){
     /* Main *****************/
     .ft-main2{
-        width: 90%;
-        height: 30vh;
+        width: 70%;
+        height: 40vh;
     }
     /* Comentários cliente*************/
     .dados-cliente{
