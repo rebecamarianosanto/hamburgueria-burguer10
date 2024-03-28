@@ -1,0 +1,987 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Archivo+Black&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    outline: 0;    
+}
+html{
+    scroll-behavior: smooth; 
+}
+
+/* SVG header */
+.svg-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    line-height: 0;
+    background-color: #010208;
+}
+
+/* Header**************/
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fca311;
+}
+.img-logo{
+    display: flex;
+    align-items: center;
+    width: 8rem;
+    padding: 5px;
+    cursor: pointer;
+}
+.header-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 5px;
+}
+.header-links a{
+    border: 1px solid transparent;
+    font-family: 'Poppins';
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #010208;
+    font-size: min(max(16px, 2vw), 14px);
+    padding: 20px;  
+}
+.header-links a:hover{
+    border: 1px solid #010208;
+    border-radius: 5px;
+    font-weight: 600;
+}
+/* MENU MOBILE ****************/
+.menu-mobile{
+    background-color: #f1f1f1;
+    position: absolute;
+    top: calc(10vh);
+    left: 0;
+    width: 100%;
+    height: auto;
+    visibility: hidden;
+    transition: 0.4s;
+    overflow: hidden;   
+}
+.menu-mobile a{
+    margin-top: 1rem;
+    font-family: 'Poppins';
+    color: #010208;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+}
+.menu-mobile i{
+    font-size: 30px;
+    color: #010208;
+}
+.menu-mobile a:hover{
+    background-color: #6666;
+}
+/*Botão mobile ******************/
+#btn-menu{
+    background-color: transparent;
+    color: #010208;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 40px;
+    transition: .2s;
+    display: none;
+}
+/* Main ************************/
+main{
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+    background-color: #010208;
+}
+.center-main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 10px;
+}
+/*ft-principal*/
+.ft-main2{
+    width: 87%;
+    height: 70vh;
+    background-image: url(imagens/img-fundo/1-combo-fundo-main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 53% 47% 59% 41% / 33% 71% 29% 67% ;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: rgb(12, 12, 12) 0px 20px 30px -10px;
+    margin-top: 2rem;
+    margin-left: 20px;
+    margin-bottom: 1rem;
+}
+.main-container{
+    width: 100%;
+    height: auto;
+    margin-right: 2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+.main-container-box{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+}
+.titulo-main{
+    font-size: min(max(2.8rem, 3.5vw), 4rem);
+    font-family: 'Bebas neue';
+    font-weight: 900;
+    padding: 5px;
+    letter-spacing: 0.8px;
+    background-image: linear-gradient(#ffffff
+    , #f1f1f1, #343a40);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: 100%;
+}
+.sub-txt-main{
+    width: 100%;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: min(max(22px, 2vw), 20px);
+    letter-spacing: 0.4px;
+    color: #ffffff;
+}
+.bnt-main-cardapio{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.bnt-main{
+    border: 1px solid transparent;
+    width: 24em;
+    padding: 7px 22px;
+    font-size: min(max(15px, 3vw), 15px);
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .2s;
+    border-radius: 40px;
+    background-color: #b42b2b;
+    color: #fff;
+    border: 1px solid transparent;
+    margin-top: 20px;
+}
+.bnt-main:hover{
+    background-color: #fca311;
+}
+.bnt-main > i {
+    width: 5px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+}
+.bnt-main:hover i {
+    transform: translateY(5px);
+}
+.bnt-main:active {
+    transform: scale(0.95);
+}
+/* Cardápio */
+.section-cardapio{
+    padding-top: 7rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background-color: #010208;
+    color: #f1f1f1; 
+}
+.titulo-cardápio{
+    text-transform: uppercase;
+    font-size: min(max(2.5rem, 3vw), 2rem);
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-decoration: overline;
+    margin-bottom: 1rem;
+}
+.container-geral{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 10px;
+}
+.container-burguer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.box-burguer{
+    border: 1px solid #3333;
+    background-color: #0d0e0d;
+    border-radius: 5px;
+    text-align: center;
+    width: 250px;
+    height: auto;
+    padding: 15px 0;
+    margin-bottom: 3rem;
+}
+.box-burguer:hover{
+    margin-top: -30px;
+    box-shadow: 2px 20px 20px #3333;
+}
+.img-buguer{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;   
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+.img-buguer img{
+    width: 100%;
+    height: 100%;
+}
+.info-burguer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.sub-titulo-burguer{
+    font-family: 'Poppins';
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: min(max(16px, 4vw), 16px);
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+.sub-txt-burguer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    font-family: 'Poppins';
+    font-size: min(max(14px, 3vw), 13px);
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    height: 65px;
+    width: 100%;
+}
+.sub-valor{
+    font-family: 'Poppins';
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: min(max(15px, 4vw), 15px);
+    letter-spacing: 0.2px;
+}
+.linha{
+    border-bottom: 1px solid #6666;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+/* Sobre a Hamburgueria----------------*/
+.sobre{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #010208;
+    color: #f1f1f1;   
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.historia-burgueria{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 10px;
+}
+.titulo-sobre{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: min(max(22px, 3vw), 2rem);
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    text-decoration: overline;
+    display: flex;
+    flex-wrap: wrap;
+}
+.txt-historia-burgueria{
+    width: 100%;
+    padding: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: min(max(17px, 3vw), 16px);
+    letter-spacing: 0.8px;
+    line-height: 1.5rem;
+    border: 1px solid #010208;
+    box-shadow: rgba(112, 108, 108, 0.37) 0px 3px 8px;
+}
+.fotos-burgueria{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+.foto-burg1{
+    width: 270px;
+    text-align: center;
+}
+.fotos-local{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.foto-burg2{
+    width: 300px;
+}
+/* Avaliação cliente -------------------------*/
+.section-avaliacao-cliente{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 20px;
+    background-color: #6666;
+    
+}
+.titulo-avaliacao{
+    margin: 2rem;
+    font-size: min(max(22px, 3vw), 25px);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container-avaliacao{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 10px;
+    padding-bottom: 4rem;
+}
+.avaliacao-sobre{
+    width: 500px;
+    background-color: #f1f1f1c7;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.avaliacao-sobre:hover{
+    margin-top: -12px;
+}
+.dados-cliente{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.cliente{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+.ft-cliente{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.ft-cliente img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.info-cliente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.nome-cliente{
+    font-size: min(max(15px, 2vw), 15px);
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+.insta-cliente{
+    font-size: min(max(12px, 2vw), 12px);
+    font-weight: 300;
+    color: #666;
+    letter-spacing: 0.2px;
+}
+.estrelas{
+    display: flex;
+    flex-direction: row;
+    color: #ffb703;
+}
+.avaliacao-cliente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.comentario-cliente{
+    width: 100%;
+    height: auto;
+    font-size: min(max(15px, 2vw), 14px);
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    padding: 2px;
+}
+
+/* Fotos geral*/
+.fotos-geral{
+    width: 100%;
+    height: auto;
+    background-color: #fca311;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x:auto;
+
+}
+.ft-nossa-burguer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+.ft-nossa-burguer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    flex-grow: 1;
+}
+
+/* Contatos */
+.section-contatos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 30px;
+    background-color: #010208;
+    text-align: center;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+.contatos{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #010208;
+    border-radius: 10px;  
+    color: #f1f1f1; 
+}
+.contatos-burguer{
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.titulo-contatos{
+    text-transform: uppercase;
+    font-size: min(max(2rem, 2vw), 1.5rem);
+    font-family: inherit;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    padding: 1px;
+    color: #ffb703;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+.info-contatos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.info-contatos p{
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: min(max(16px, 2vw), 15px);
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.info-contatos i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #666;
+}
+.linha-div{
+    border: 1px solid #ffb703;
+    width: 20%;
+}
+.hora-abertura{
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.txt-hora{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: min(max(17px, 2vw), 17px);
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+.info-hora{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: min(max(15px, 2vw), 15px);
+    letter-spacing: 0.8px;
+}
+.info-hora i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #666;
+}
+
+/* Mapa */
+.mapa{
+    border: 1px solid;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    color: #010208;
+}
+.footer-info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 30px;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5;
+}
+.logo-footer{
+    width: 12em;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 10px;   
+    gap: 5px;
+}
+.footer-links a{
+    color: #0d0e0d;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffb703;
+}
+.footer-links a:hover{
+    font-weight: 600;
+}
+.footer-local{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    text-align: center;
+    gap: 2rem;
+    padding: 20px;
+}
+.footer-reserva{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+.txt-reserva{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: min(max(16px, 3vw), 18px);
+    text-align: center;
+    text-transform: uppercase;
+}
+.sub-txt-reserva{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: min(max(16px, 3vw), 15px);
+    padding: 5px;
+}
+.contatos-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    font-weight: 400;
+    font-size: min(max(16px, 3vw), 16px);
+}
+.footer-credito{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    border-top: 1px solid #666;
+    font-weight: 300;
+    font-size: min(max(12px, 3vw), 13px);
+}
+
+
+
+/* @media screen -------------------------------*/
+@media (max-width: 1149px){
+    /* Main ******************/
+    .ft-main2{
+        width: 100%;
+        height: 50vh;
+    }
+    /* Cardápio ***************/
+    .container-geral{
+        width: 60%;
+        padding: 10px;
+    }
+    /* Sobre ******************/
+    .sobre{
+        flex-direction: column;
+        width: 100%;
+    }
+    .historia-burgueria{
+        width: 60%;
+        
+    }
+    .fotos-burgueria{
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1060px){
+    /* Cardápio ************************/
+    .container-geral{
+        width: 70%;
+    }
+    /* Sobre *************************/
+    .historia-burgueria{
+        width: 70%;
+    }
+    /* Comentários clientes **********/
+    .avaliacao-sobre{
+        width: 45%;
+    }
+    /* Footer ***********************/
+    .contatos-footer{
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 899px){
+    /* header e menu-mobile *******************/
+    .header-links{
+        display: none;
+    }
+    header{
+        width: 100%;
+    }
+    .menu-mobile.abrir{
+        visibility: visible;
+        height: calc(100vh - 77px);
+    }
+    #btn-menu{
+        display: block;
+    }
+    /* main ******************************/
+    .ft-main2{
+        width: 80%;
+    }
+    .center-main{
+    flex-direction: column;
+    width: 100%;
+    }
+    .main-container{
+        width: 80%;
+        margin-right: 0;
+    }
+    .main-container-box{
+        width: 100%;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .bnt-main-cardapio{
+        width: 100%;
+    }
+    /* Cardápio ************************/
+    .container-geral{
+        width: 80%;
+    }
+    /* Sobre *************************/
+    .historia-burgueria{
+        width: 80%;
+    }
+    /* Comentários clientes *************/
+    .avaliacao-sobre{
+        width: 100%;
+        padding: 10px;
+    }
+    /* Contatos *************************/
+    .section-contatos{
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+    .contatos{
+        width: 100%;
+    }
+    .mapa{
+        width: 100%;
+    }
+    /* Footer **********************/
+    footer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-info{
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-links{
+        display: none;
+    }
+    .footer-local{
+        flex-direction: row;
+        width: 100%;
+    }
+    .footer-reserva{
+        flex-direction: column;
+        width: 70%;
+        text-align: center;
+        gap: 10px;
+    }
+    .contatos-footer{
+        text-align: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    .footer-credito{
+        text-align: center;
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    /*Main *****************************/
+    .ft-main2{
+        height: 50vh;
+        margin-bottom: 0;
+    }
+    .main-container{
+        margin-top: 0rem;
+        width: 90%;
+    }
+    /*Cardápio ************************/
+    .container-burguer{
+        width: 100%;
+    }
+    /* Sobre *************************/
+    .historia-burgueria{
+        width: 90%;
+    }
+    /*Avaliação cliente ***************/
+    .avaliacao-sobre{
+        width: 100%;
+        height: 100%;
+    }    
+    .fotos-burgueria{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    /* Footer *********************/
+    .contatos-footer{
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 500px){
+    /* Main *****************/
+    .ft-main2{
+        width: 90%;
+        height: 40vh;
+    }
+    .main-container{
+        width: 100%;
+    }
+    /* Sobre *************************/
+    .historia-burgueria{
+        width: 100%;
+    }
+    /* Footer *********************/
+    .footer-reserva{
+        width: 100%;
+    }
+}
+@media (max-width: 440px){
+    /* Main *****************/
+    .ft-main2{
+        width: 90%;
+        height: 30vh;
+    }
+    /* Comentários cliente*************/
+    .dados-cliente{
+        flex-direction: column;
+        align-items: baseline;
+        gap: 7px;
+    }
+}
