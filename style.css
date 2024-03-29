@@ -43,7 +43,7 @@ header{
 .img-logo{
     display: flex;
     align-items: center;
-    width: 8rem;
+    width: 7rem;
     padding: 5px;
     cursor: pointer;
 }
@@ -62,7 +62,7 @@ header{
     text-transform: uppercase;
     cursor: pointer;
     color: #010208;
-    font-size: min(max(24px, 3vw), 14px);
+    font-size: min(max(15px, 2vw), 14px);
     padding: 20px;  
 }
 .header-links a:hover{
@@ -328,10 +328,8 @@ main{
     font-weight: 200;
     color: #ffffff;
     letter-spacing: 0.8px;
-    line-height: 1.3rem;
     margin-bottom: 10px;
     height: 90px;
-    width: 100%;
 }
 .sub-valor{
     font-family: 'Poppins';
@@ -782,12 +780,12 @@ footer{
 @media (max-width: 1149px){
     /* Main ******************/
     .ft-main2{
-        width: 80%;
-        height: 55vh;
+        width: 70%;
+        height: 70vh;
     }
     /* Cardápio ***************/
     .container-geral{
-        width: 60%;
+        width: 40%;
         padding: 10px;
     }
     /* Sobre ******************/
@@ -929,7 +927,7 @@ footer{
 @media screen and (max-width: 768px){
     /*Main *****************************/
     .ft-main2{
-        width: 70%;
+        width: 60%;
         height: 60vh;
         margin-bottom: 0;
     }
