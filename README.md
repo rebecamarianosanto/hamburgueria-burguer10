@@ -2,6 +2,8 @@
 
 Landing page desenvolvida como projeto pessoal para simular a presença digital de uma hamburgueria fictícia. O foco está em apresentar a marca, destacar seus diferenciais e facilitar o contato com o cliente através de um botão de pedido via WhatsApp.
 
+## 📸 Preview
+
 ![image](https://github.com/rebecamarianosanto/hamburgueria-burguer10/assets/138153759/4f82cfc0-b12a-4d65-ae69-b869703f5380)
 
 ## 🔗 Acesse o Projeto
@@ -27,10 +29,6 @@ Landing page desenvolvida como projeto pessoal para simular a presença digital 
 ## 🎯 Objetivo do Projeto
 
 Criar uma landing page com foco comercial, utilizando apenas tecnologias base do front-end, para demonstrar habilidades de design responsivo, boas práticas de marcação semântica e experiência do usuário (UX).
-
-## 📸 Preview
-
-![Preview do projeto Hamburgueria Burguer10](./preview.jpg) <!-- Substituir por uma imagem real do projeto -->
 
 ## 👨‍💻 Autor
 
