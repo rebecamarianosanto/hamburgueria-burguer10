@@ -4,7 +4,7 @@ Landing page desenvolvida como projeto pessoal para simular a presença digital 
 
 ## 📸 Preview
 
-![image](https://github.com/user-attachments/assets/a27d4ef3-02a6-49d7-85ba-280229b28747)
+![burguer](https://github.com/user-attachments/assets/cdab68fc-2d1a-4c2a-bea4-05b1e0a09a56)
 
 ## 🔗 Acesse o Projeto
 
