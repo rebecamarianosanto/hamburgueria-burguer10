@@ -1,6 +1,6 @@
 # 🍔 Hamburgueria Burguer10
 
-Landing page desenvolvida como projeto pessoal para simular a presença digital de uma hamburgueria fictícia. O foco está em apresentar a marca, destacar seus diferenciais e facilitar o contato com o cliente através de um botão de pedido via WhatsApp.
+Landing Page de apresentação da Hamburgueria Burguer10, um espaço descontraído ideal para happy hour, jantares e encontros com amigos e família. O site fornece informações claras sobre o cardápio, ambiente, localização e contatos, visando engajar o público local e facilitar reservas.
 
 ## 📸 Preview
 
