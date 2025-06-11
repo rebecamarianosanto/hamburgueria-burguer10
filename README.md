@@ -4,7 +4,7 @@ Landing page desenvolvida como projeto pessoal para simular a presença digital 
 
 ## 📸 Preview
 
-![image](https://github.com/rebecamarianosanto/hamburgueria-burguer10/assets/138153759/4f82cfc0-b12a-4d65-ae69-b869703f5380)
+![image](https://github.com/user-attachments/assets/a27d4ef3-02a6-49d7-85ba-280229b28747)
 
 ## 🔗 Acesse o Projeto
 
