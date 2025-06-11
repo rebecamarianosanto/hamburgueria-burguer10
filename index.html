@@ -28,8 +28,7 @@
 
 </head>
 <body>
-    <div class="svg-header">
-        <!-- Header ------------------------------>
+    <div class="hero">
         <header>
             <div class="logo">
                 <a class="logo-titulo" href="#">
@@ -56,42 +55,47 @@
                 <a href="#localiza"><i class="fa-solid fa-location-dot"></i> Localização</a>
             </div>
         </header>
-    </div>
-    <!-- Main ------------------------->
-    <main>
-        <div class="center-main">
-            <!--Ft-principal-->
-            <div class="ft-main2" data-aos="zoom-in"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="400"
-            data-aos-duration="1000"></div>
-            <!--Conter main -------------->
-            <div class="main-container" data-aos="fade-left"
-                data-aos-anchor="#example-anchor"
-                data-aos-offset="500"
-                data-aos-delay="300"
-                data-aos-duration="500">
-                <div class="main-container-box">
-                    <h1 class="titulo-main">Que tal aquele happy hour especial com os amigos e a família?
-                    </h1>
-                    <h2 class="sub-txt-main">
-                        Aqui temos um espaço ideal para um encontro de boas risadas e lanches deliosamente saborosos.
-                    </h2>
-                    <div class="bnt-main-cardapio" >
-                        <a class="bnt-main" href="#menu-cardapio">Venha conferir<i class="fa-solid fa-angles-down"></i></a>
+
+        <main class="main">
+            <div class="center-main">
+                <!--Ft-principal ft-main2-->
+                <div class="filtro">
+                    <div class="foto-principal" data-aos="zoom-in"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="400"
+                    data-aos-duration="1000">
+                    </div>
+
+                    <div class="main-container" data-aos="fade-left"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-offset="500"
+                        data-aos-delay="300"
+                        data-aos-duration="500">
+
+                        <div class="main-container-box">
+                            <h1 class="titulo-main">Que tal aquele <span>happy hour especial</span> com os amigos e a família?
+                            </h1>
+                            <h2 class="sub-txt-main">
+                                Aqui temos um espaço ideal para um encontro de boas risadas e lanches deliosamente saborosos.
+                            </h2>
+                            <div class="bnt-main-cardapio" >
+                                <a class="bnt-main" href="#menu-cardapio">Venha conferir<i class="fa-solid fa-angles-down"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
+
     <!-- Cardápio -------------------------------------->
     <section class="section-cardapio" id="cardapio">
         <h2 class="titulo-cardápio" id="menu-cardapio">Cardápio</h2>
         <div class="container-geral">
             <!--Lanches Burguers-------------------------->
-            <div class="container-burguer">
+            <div class="container-burguer" data-aos="fade-up" data-aos-duration="1000">
                 <div class="box-burguer" data-aos="zoom-in">
-                    <img class="img-buguer" src="imagens/img-burguers/buguer-frances-p.jpg" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-burguers/buguer-frances-p.jpg" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">X-Burgão</p>
                         <p class="sub-txt-burguer">Pão francês com gergelim, 2 burguers 120g, tomate, cheedar, picles e molho especial</p>
@@ -99,7 +103,7 @@
                     </div>
                 </div>
                 <div class="box-burguer" data-aos="zoom-in">
-                    <img class="img-buguer" src="imagens/img-burguers/duo-burguer-bacon-p.jpg" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-burguers/duo-burguer-bacon-p.jpg" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">X-Baconzito</p>
                         <p class="sub-txt-burguer">Pão de gergelim com 2 hamburgão 140g, cheedar, tomate e muito bacon</p>
@@ -107,7 +111,7 @@
                     </div>
                 </div>
                 <div class="box-burguer" data-aos="zoom-in">
-                    <img class="img-buguer" src="imagens/img-burguers/duo-burguer-molho-p.jpg" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-burguers/duo-burguer-molho-p.jpg" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">Quarteirão Billy Jack</p>
                         <p class="sub-txt-burguer">2 burguers de 140g, cheedar, picles e cebola caramelisada com molho especial no pão gergelim</p>
@@ -115,7 +119,7 @@
                     </div>
                 </div>
                 <div class="box-burguer" data-aos="zoom-in">
-                    <img class="img-buguer" src="imagens/img-burguers/burgao-egg-2-p.jpg" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-burguers/burgao-egg-2-p.jpg" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">X Egg-Bacon</p>
                         <p class="sub-txt-burguer">Burguer 140g, bacon, maionese de bacon, ovo, tomate seco com cheedar e barbecue</p>
@@ -125,9 +129,9 @@
             </div>
             <div class="linha"></div>
             <!--Fritas---------------------------------->
-            <div class="container-burguer" data-aos="zoom-in">
+            <div class="container-burguer" data-aos="fade-up" data-aos-duration="1000">
                 <div class="box-burguer">
-                    <img class="img-buguer" src="imagens/img-fritas/batata-p.webp" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-fritas/batata-p.webp" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">Batata Frita</p>
                         <p class="sub-txt-burguer">Porção média 220g com ketchup</p>
@@ -135,7 +139,7 @@
                     </div>
                 </div>
                 <div class="box-burguer" data-aos="zoom-in">
-                    <img class="img-buguer" src="imagens/img-fritas/natchos doritos-p.jpg" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-fritas/natchos doritos-p.jpg" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">Nachos com guacamole</p>
                         <p class="sub-txt-burguer">Porção com 250g de nachos e molho guacamole </p>
@@ -143,7 +147,7 @@
                     </div>
                 </div>
                 <div class="box-burguer" data-aos="zoom-in">
-                    <img class="img-buguer" src="imagens/img-fritas/batat-rustica-p.jpg" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-fritas/batat-rustica-p.jpg" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">Batata rústica</p>
                         <p class="sub-txt-burguer">Batata rústica temperada de 300g</p>
@@ -151,7 +155,7 @@
                     </div>
                 </div>
                 <div class="box-burguer" data-aos="zoom-in">
-                    <img class="img-buguer" src="imagens/img-fritas/batata-bacon-p.jpg" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-fritas/batata-bacon-p.jpg" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">Batata com bacon</p>
                         <p class="sub-txt-burguer">Porção de batata com bacon e cheedar 400g</p>
@@ -162,30 +166,30 @@
             <div class="linha"></div>
             <!--milk/ sobremesa----------------------------->
             <div class="container-burguer"
-            data-aos="zoom-in">
+            data-aos="fade-up" data-aos-duration="1000">
                 <div class="box-burguer">
-                    <img class="img-buguer" src="imagens/img-milk/milk-choco-p.jpg" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-milk/milk-choco-p.jpg" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">Milkshake Chocolate</p>
                         <p class="sub-valor">R$ 12,00</p>
                     </div>
                 </div>
                 <div class="box-burguer" data-aos="zoom-in">
-                    <img class="img-buguer" src="imagens/img-milk/milk-morango-p.jpg" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-milk/milk-morango-p.jpg" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">Milkshake Morango</p>
                         <p class="sub-valor">R$ 15,00</p>
                     </div>
                 </div>
                 <div class="box-burguer" data-aos="zoom-in">
-                    <img class="img-buguer" src="imagens/img-milk/milk-acai-p.jpg" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-milk/milk-acai-p.jpg" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">Milkshake Açaí</p>
                         <p class="sub-valor">R$ 18,90</p>
                     </div>
                 </div>
                 <div class="box-burguer" data-aos="zoom-in">
-                    <img class="img-buguer" src="imagens/img-milk/salada de fruta-p.png" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-milk/salada de fruta-p.png" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">Salada de fruta</p>
                         <p class="sub-valor">R$ 22,00</p>
@@ -194,30 +198,30 @@
             </div>
             <div class="linha"></div>
             <!--Bebidas--------------------------------->
-            <div class="container-burguer" data-aos="zoom-in">
+            <div class="container-burguer" data-aos="fade-up" data-aos-duration="1000">
                 <div class="box-burguer">
-                    <img class="img-buguer" src="imagens/img-bebidas/refri2-p.png" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-bebidas/refri2-p.png" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">Refrigerante lata</p>
                         <p class="sub-valor">R$ 6,50</p>
                     </div>
                 </div>
                 <div class="box-burguer" data-aos="zoom-in">
-                    <img class="img-buguer" src="imagens/img-bebidas/coca-2l-p.jpg" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-bebidas/coca-2l-p.jpg" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">Coca cola 2L</p>
                         <p class="sub-valor">R$ 14,90</p>
                     </div>
                 </div>
                 <div class="box-burguer" data-aos="zoom-in">
-                    <img class="img-buguer" src="imagens/img-bebidas/chopp-p.jpg" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-bebidas/chopp-p.jpg" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">Chopp 450ml</p>
                         <p class="sub-valor">R$ 18,00</p>
                     </div>
                 </div>
                 <div class="box-burguer" data-aos="zoom-in">
-                    <img class="img-buguer" src="imagens/img-bebidas/drinks.jpg" alt="foto-burguer">
+                    <img class="img-buguer" src="imagens/img-bebidas/drinks.jpg" alt="foto-burguer" loading="lazy">
                     <div class="info-burguer">
                         <p class="sub-titulo-burguer">Diversos Drinks</p>
                         <p class="sub-valor">R$ 22,90</p>
@@ -235,10 +239,10 @@
             </p>
         </div>
         <div class="fotos-burgueria">
-            <img class="foto-burg1" src="imagens/img-local/local-frente-p.jpg" alt="foto-local" data-aos="fade-right"  >
-            <div class="fotos-local">
-                <img class="foto-burg2" src="imagens/img-local/balcao-p.jpg" alt="foto-local" data-aos="zoom-in" data-aos-delay="100">
-                <img class="foto-burg2" src="imagens/img-local/local-centro-p.jpg" alt="foto-local" data-aos="zoom-in" data-aos-delay="150">
+            <img class="foto-burg1" src="imagens/img-local/local-frente-p.jpg" alt="foto-local" data-aos="fade-right" data-aos-duration="1000" loading="lazy">
+            <div class="fotos-local" data-aos="zoom-in" data-aos-duration="1000"  data-aos-delay="100">
+                <img class="foto-burg2" src="imagens/img-local/balcao-p.jpg" alt="foto-local" loading="lazy">
+                <img class="foto-burg2" data-aos="zoom-in" src="imagens/img-local/local-centro-p.jpg" alt="foto-local" loading="lazy">
             </div>
         </div>
     </section>
@@ -251,7 +255,7 @@
             <div class="avaliacao-sobre">
                 <div class="dados-cliente">
                     <div class="cliente">
-                        <img class="ft-cliente" src="imagens/img-avaliacao/c-1.jpg" alt="foto">
+                        <img class="ft-cliente" src="imagens/img-avaliacao/c-1.jpg" alt="foto-user" loading="lazy">
                         <div class="nome-cliente">
                             <p class="nm-cliente">Sophia Souza</p>
                             <p class="insta-cliente">@sophiasouza</p>
@@ -272,7 +276,7 @@
             <div class="avaliacao-sobre">
                 <div class="dados-cliente">
                     <div class="cliente">
-                        <img class="ft-cliente" src="imagens/img-avaliacao/c-8.jpg" alt="foto">
+                        <img class="ft-cliente" src="imagens/img-avaliacao/c-8.jpg" alt="foto-user" loading="lazy">
                         <div class="info-cliente">
                             <p class="nome-cliente">Carlos W. Santos</p>
                             <p class="insta-cliente">@carloswilsantos</p>
@@ -293,7 +297,7 @@
             <div class="avaliacao-sobre">
                 <div class="dados-cliente">
                     <div class="cliente">
-                        <img class="ft-cliente" src="imagens/img-avaliacao/c-7.jpg" alt="foto">
+                        <img class="ft-cliente" src="imagens/img-avaliacao/c-7.jpg" alt="foto-user" loading="lazy">
                         <div class="nome-cliente">
                             <p class="nm-cliente">Ruth Mariano</p>
                             <p class="insta-cliente">@rumariano</p>
@@ -314,7 +318,7 @@
             <div class="avaliacao-sobre">
                 <div class="dados-cliente">
                     <div class="cliente">
-                        <img class="ft-cliente" src="imagens/img-avaliacao/c-4.jpg" alt="foto">
+                        <img class="ft-cliente" src="imagens/img-avaliacao/c-4.jpg" alt="foto-user" loading="lazy">
                         <div class="nome-cliente">
                             <p class="nm-cliente">Ray Santos</p>
                             <p class="insta-cliente">@raysantos97</p>
@@ -335,10 +339,10 @@
             <div class="avaliacao-sobre">
                 <div class="dados-cliente">
                     <div class="cliente">
-                        <img class="ft-cliente" src="imagens/img-avaliacao/c-6.jpg" alt="foto">
+                        <img class="ft-cliente" src="imagens/img-avaliacao/c-6.jpg" alt="foto-user" loading="lazy">
                         <div class="nome-cliente">
-                            <p class="nm-cliente">Bya Soares</p>
-                            <p class="insta-cliente">@byasoares</p>
+                            <p class="nm-cliente">Angela Soares</p>
+                            <p class="insta-cliente">@angela.soares</p>
                         </div>
                     </div>
                     <div class="estrelas">
@@ -350,19 +354,43 @@
                     </div>
                 </div>
                 <div class="avaliacao-cliente">
-                    <p class="comentario-cliente">Gosto de explorar lugares diferentes e sem dúvidas a Burguer 10 me conquistou com os lanches artesanais, a criatividade dos drinks e o ambiente retrô. Recomendo galera!</p>
+                    <p class="comentario-cliente">Gosto de explorar lugares diferentes e sem dúvidas a Burguer 10 me conquistou com os lanches artesanais, os drinks e o ambiente retrô. Recomendo galera!</p>
                 </div>
             </div>
+
+            <div class="avaliacao-sobre">
+                <div class="dados-cliente">
+                    <div class="cliente">
+                        <img class="ft-cliente" src="imagens/img-avaliacao/favicon.ico" alt="foto-user" loading="lazy">
+                        <div class="nome-cliente">
+                            <p class="nm-cliente">Rebeca Mariano</p>
+                            <p class="insta-cliente">@rebecamariano2</p>
+                        </div>
+                    </div>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="avaliacao-cliente">
+                    <p class="comentario-cliente">Sensacional, comemorei meu aniversário de 25 anos lá com minha família e amigos, todos amaram o local e a comida. Atendimento muito bom e as músicas bem animadas.</p>
+                </div>
+            </div>
+
+            
         </div>
     </section>
     <!-- Fotos geral ----------------->
     <section class="fotos-geral">
         <div class="ft-nossa-burguer">
-            <img src="imagens/img-avaliacao/Nova pasta/galera-burguer-p.jpg" alt="foto">
-            <img src="imagens/img-avaliacao/Nova pasta/homem-burguer-p.jpg" alt="foto">
-            <img src="imagens/img-avaliacao/Nova pasta/lanche-amigos-p.jpg" alt="foto">
-            <img src="imagens/img-avaliacao/Nova pasta/mesa-burguer-p.jpg" alt="foto">
-            <img src="imagens/img-avaliacao/Nova pasta/service-burguer-p.jpg" alt="foto">
+            <img src="imagens/img-avaliacao/Nova pasta/galera-burguer-p.jpg" alt="foto-user" loading="lazy">
+            <img src="imagens/img-avaliacao/Nova pasta/homem-burguer-p.jpg" alt="foto-user" loading="lazy">
+            <img src="imagens/img-avaliacao/Nova pasta/lanche-amigos-p.jpg" alt="foto-user" loading="lazy">
+            <img src="imagens/img-avaliacao/Nova pasta/mesa-burguer-p.jpg" alt="foto-user" loading="lazy">
+            <img src="imagens/img-avaliacao/Nova pasta/service-burguer-p.jpg" alt="foto-user" loading="lazy">
         </div>
     </section>
     <!-- Contatos --------------------------------->
@@ -383,7 +411,7 @@
                 <div class="info-hora">
                     <p><i class="fa-solid fa-clock"></i>Terça á sexta - 18h ás 22h</p>
                     <p><i class="fa-solid fa-clock"></i>Sábado e Domingo - 16h ás 22h</p>
-                    <p><i class="fa-regular fa-circle-xmark"></i>Segunda - Fechados</p>
+                    <p><i class="fa-regular fa-circle-xmark"></i>Segunda - Fechado</p>
                 </div>
             </div>
         </div>

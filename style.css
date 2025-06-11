@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Archivo+Black&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
 
+:root{
+    --titulo-main: (clamp(1.8rem, 2vw, 4rem));
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,66 +14,61 @@
     outline: 0;    
 }
 html{
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;     
 }
 
-/* SVG header */
-.svg-header {
-    position: absolute;
-    top: 0;
-    left: 0;
+.hero{
     width: 100%;
     height: auto;
-    overflow: hidden;
-    line-height: 0;
     background-color: #010208;
+    padding: 4rem 0;
 }
 
 /* Header**************/
 header{
     width: 100%;
-    height: 10vh;
+    height: 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 5px 2rem;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 100;
     background-color: #fca311;
 }
 .img-logo{
     display: flex;
     align-items: center;
     width: 7rem;
-    padding: 5px;
+    padding: 5px 0;
     cursor: pointer;
 }
 .header-links{
+    height: auto;
+    padding: 10px;
+    gap: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 5px;
+    justify-content: space-around;
 }
 .header-links a{
-    border: 1px solid transparent;
+    padding: 10px 20px;
     font-family: 'Poppins';
     font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
     color: #010208;
     font-size: min(max(15px, 2vw), 14px);
-    padding: 20px;  
     
 }
 .header-links a:hover{
-    border: 1px solid #010208;
+    transform: all 0.3s ease-in-out;
     border-radius: 5px;
-    font-weight: 600;
+    transform: scale(1.1);
 }
 /* MENU MOBILE ****************/
 .menu-mobile{
@@ -119,131 +118,123 @@ header{
     display: none;
 }
 /* Main ************************/
-main{
+.main{
     width: 100%;
     height: auto;
-    margin-top: 10vh;
+    max-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #010208;
 }
-.center-main{
+
+.center-main .filtro{
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: nowrap;
     gap: 2rem;
-    width: 100%;
     padding: 10px;
     overflow: hidden;
+
 }
 /*ft-principal*/
-.ft-main2{
-    width: 90%;
-    height: 80vh;
+.foto-principal {
+    flex: 0 0 50%;
+    min-width: 390px;
+    height: auto;
+    margin: 0 auto;
+    aspect-ratio: 4 / 4; /* mantém proporção mesmo com conteúdos diferentes */
     background-image: url(imagens/img-fundo/1-combo-fundo-main.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 53% 47% 59% 41% / 33% 71% 29% 67% ;
-    position: relative;
-    top: 0;
-    left: 0;
     box-shadow: rgb(12, 12, 12) 0px 20px 30px -10px;
-    margin-top: 2rem;
-    margin-left: 20px;
-    margin-bottom: 1rem;
+    margin-top: 3rem;
     overflow: hidden;
-}
-.main-container{
-    width: 100%;
-    height: auto;
-    margin-right: 2rem;
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin-top: 2rem;
-    overflow: hidden;
-}
-.main-container-box{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    height: auto;
-}
-.titulo-main{
-    font-size: min(max(2.8rem, 3.5vw), 4rem);
-    font-family: 'Bebas neue';
-    font-weight: 900;
-    padding: 5px;
-    letter-spacing: 0.8px;
-    background-image: linear-gradient(#ffffff
-    , #f1f1f1, #343a40);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: #6666;
-    width: 100%;
-    background-color: #f1f1f1;
     
 }
-.sub-txt-main{
+.main-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 10px;
+
+}
+.main-container-box{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
     width: 100%;
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: min(max(22px, 2vw), 20px);
+    height: auto;
+}
+
+.titulo-main{
+    max-width: 600px;
+    color: #f1f1f1;
+    font-size: clamp(1.8rem, 2.4vw, 4rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+
+}
+.titulo-main span{
+    font-weight: 500;
+}
+.sub-txt-main{
+    max-width: 550px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+    font-size: min(max(16px, 2vw), 18px);
     letter-spacing: 0.4px;
-    color: #ffffffc2;
+    color: #c1c1c1;
 }
 .bnt-main-cardapio{
-    position: relative;
-    top: 0;
-    left: 0;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 10px;
-    text-align: center;
-    flex-wrap: wrap;
 }
 .bnt-main{
-    border: 1px solid transparent;
-    width: 24em;
-    padding: 7px 22px;
-    font-size: min(max(15px, 3vw), 15px);
+    width: 25em;
+    padding: 7px 50px;
+    font-size: min(max(16px, 3vw), 16px);
     font-weight: 400;
     letter-spacing: 0.8px;
     text-transform: uppercase;
     cursor: pointer;
     transition: all .2s;
     border-radius: 40px;
-    background-color: #b42b2b;
+    background-color: #b42b2bb7;
     color: #fff;
-    border: 1px solid transparent;
-    margin-top: 20px;
 }
 .bnt-main:hover{
-    background-color: #fca311;
+    background-color: #fca211b2;
 }
 .bnt-main > i {
-    width: 5px;
-    margin-left: 10px;
+    margin-left: 12px;
     transition: transform .3s ease-in-out;
 }
 .bnt-main:hover i {
-    transform: translateY(5px);
+    animation: arrowMove 0.6s infinite;
 }
-.bnt-main:active {
-    transform: scale(0.95);
+
+  @keyframes arrowMove {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(2px); }
+    100% { transform: translateY(0); }
 }
+
+
 /* Cardápio */
 .section-cardapio{
-    padding-top: 7rem;
+    padding-top: 6rem;
     width: 100%;
     height: auto;
     display: flex;
@@ -433,8 +424,8 @@ main{
     align-items: center;
     justify-content: space-around;
     gap: 1rem;
-    padding: 20px;
-    background-color: #6666;
+    padding: 3rem 0 2rem 0;
+    background-color: #f1f1f1c7;
     overflow: hidden;
     
 }
@@ -793,11 +784,6 @@ footer{
 
 /* @media screen -------------------------------*/
 @media (max-width: 1149px){
-    /* Main ******************/
-    .ft-main2{
-        width: 70%;
-        height: 70vh;
-    }
     /* Cardápio ***************/
     .container-geral{
         width: 40%;
@@ -857,26 +843,43 @@ footer{
         display: block;
     }
     /* main ******************************/
-    .ft-main2{
-        width: 50%;
-        height: 70vh;
-        margin-bottom: 0;
-        padding-bottom: 0;
+    .foto-principal{
+        flex: 0 0 50%;
+        min-width: 490px;
+        margin: 1rem auto;
     }
-    .center-main{
-    flex-direction: column;
-    width: 100%;
+    .center-main .filtro{
+        /* width: 100%;
+        flex-direction: column;
+        background-image: url(imagens/img-fundo/1-combo-fundo-main.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; */
+        flex-direction: column;
+        width: 100%;
+    
     }
+    /* .filtro{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    } */
     .main-container{
-        width: 80%;
-        margin-right: 0;
+        width: 100%;
+        padding: 10px;
+        margin-top: 0;
     }
     .main-container-box{
         width: 100%;
         align-items: center;
-        margin-top: 1rem;
+        padding: 0;
+        gap: 10px;
+    }
+    .titulo-main{
+        font-size: 2.8rem;
     }
     .bnt-main-cardapio{
+        text-align: center;
         width: 100%;
     }
     /* Cardápio ************************/
@@ -939,16 +942,20 @@ footer{
 
 }
 
-@media screen and (max-width: 768px){
-    /*Main *****************************/
-    .ft-main2{
-        width: 60%;
-        height: 60vh;
-        margin-bottom: 0;
+@media screen and (max-width: 767px){
+    /* main ******************************/
+    .foto-principal{
+        flex: 0 0 40%;
+        min-width: 300px;
+        margin: 1rem auto;
     }
-    .main-container{
-        margin-top: 0rem;
-        width: 90%;
+    .center-main .filtro{
+        flex-direction: column;
+        width: 100%;
+    
+    }    
+    .titulo-main{
+        font-size: 1.8rem;
     }
     /*Cardápio ************************/
     .container-burguer{
@@ -979,14 +986,7 @@ footer{
 }
 
 @media (max-width: 500px){
-    /* Main *****************/
-    .ft-main2{
-        width: 60%;
-        height: 50vh;
-    }
-    .main-container{
-        width: 100%;
-    }
+    
     /* Sobre *************************/
     .historia-burgueria{
         width: 100%;
@@ -1001,11 +1001,6 @@ footer{
     }
 }
 @media (max-width: 440px){
-    /* Main *****************/
-    .ft-main2{
-        width: 70%;
-        height: 40vh;
-    }
     /* Comentários cliente*************/
     .dados-cliente{
         flex-direction: column;
